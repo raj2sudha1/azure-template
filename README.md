@@ -26,7 +26,7 @@ docker run --rm `
   -e SERVER_NAME=$(hostname) `
   -e IP_ADDRESSES=127.0.0.1,192.168.254.135 `
   -v "$(pwd)\server:c:\programdata\docker" `
-  -v "$(pwd)\client\.docker:c:\users\raj2sudha\.docker" raj2sudha/dockertls-windows-1709
+  -v "$(pwd)\client\.docker:c:\users\containeradministrator\.docker" raj2sudha/dockertls-windows-1709
 dir server\certs.d
 dir server\config
 dir client\.docker
