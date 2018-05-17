@@ -9,3 +9,9 @@ azure template to create windowsserver 2016
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%raj2sudha1%2Fazure-template%2Fmaster%2Ftemplate.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
+
+
+Login into Azure Vm and install git
+```bash
+$ choco install git -params '"/GitAndUnixToolsOnPath /WindowsTerminal"' -y
+```
