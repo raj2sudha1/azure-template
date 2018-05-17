@@ -15,3 +15,19 @@ Login into Azure Vm and install git
 ```bash
 $ choco install git -params '"/GitAndUnixToolsOnPath /WindowsTerminal"' -y
 ```
+### Test drive
+
+Just run it in a clean environment creating two folders on your host:
+
+```powershell
+mkdir server
+mkdir client\.docker
+docker run --rm `
+  -e SERVER_NAME=$(hostname) `
+  -e IP_ADDRESSES=127.0.0.1,192.168.254.135 `
+  -v "$(pwd)\server:c:\programdata\docker" `
+  -v "$(pwd)\client\.docker:c:\users\containeradministrator\.docker" stefanscherer/dockertls-windows
+dir server\certs.d
+dir server\config
+dir client\.docker
+```
