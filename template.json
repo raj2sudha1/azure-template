@@ -29,7 +29,7 @@
     },
     "machineHome": {
       "type": "string",
-      "defaultValue": "/Users/stefan",
+      "defaultValue": "/Users/sy",
       "metadata": {
         "description": "Path of your HOME/USERPROFILE on your local host machine for the docker-machine configs."
       }
