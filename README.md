@@ -89,3 +89,6 @@ docker run --rm `
   -v "$env:USERPROFILE\.docker:c:\users\containeradministrator\.docker" raj2sudha/dockertls-windows-1709
 ```
 
+Read this article : Remote Management of a Windows Docker Host
+https://docs.microsoft.com/en-us/virtualization/windowscontainers/management/manage_remotehost
+
