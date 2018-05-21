@@ -166,3 +166,29 @@ Git commit:   Fri Oct  6 18:01:48 2017 
 OS/Arch:      falsews/amd64
 
 
+=============================================
+After this we have to copy the azure VM from ~/.docker/machine/machines/az1709
+to local VM path ~/.docker/machine/machines/
+
+For me both azure VM and local VM had the same Users (C:\Users\sy)
+
+For you if they are different.
+Go to local VM path : ~/.docker/machine/machines/az1709 
+Open Config.json and at end of the files Cert paths should be updated to your local user.
+
+
+
+ "AuthOptions": {            
+ "CertDir": "/Users/<localUser>/.docker/machine/machines/az1709",            
+ "CaCertPath": "/Users/<localUser>/.docker/ca.pem",            
+ "CaPrivateKeyPath": "/Users/<localUser>/.docker/machine/machines/az1709/ca-key.pem",            
+ "CaCertRemotePath": "",            
+ "ServerCertPath": "/Users/<localUser>/.docker/machine/machines/az1709/server.pem",           
+ "ServerKeyPath": "/Users/<localUser>/.docker/machine/machines/az1709/server-key.pem",           
+ "ClientKeyPath": "/Users/<localUser>/.docker/key.pem",            
+ "ServerCertRemotePath": "",           
+ "ServerKeyRemotePath": "",           
+ "ClientCertPath": "/Users/<localUser>/.docker/cert.pem",           
+ "ServerCertSANs": [],            
+ "StorePath": "/Users/<localUser>/.docker/machine/machines/az1709"        
+ }
